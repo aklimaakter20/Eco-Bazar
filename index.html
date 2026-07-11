@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <title>Eco-Bazar</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
@@ -13,16 +14,35 @@
     </style>
 </head>
 <body>
-    <header>
-        <div class="bg-green-100 py-2">
-            <div class="flex justify-between container mx-auto ">
+    <header class="container mx-auto px-12">
+        <div class="py-2">
+            <div class="flex justify-between ">
                 <div class="flex items-center gap-2">
                     <img src="./image/Map Pin.png" alt="">
-                    <p>Store Location: Lincoln- 344, Illinois, Chicago, USA</p>
+                    <p class="text-sm">Store Location: Lincoln- 344, Illinois, Chicago, USA</p>
                 </div>
-                <div class="flex justify-between ">
-                    <p class="">English</p>
-                    <p class="border-l pl-4 border-gray-400">USD</p>
+                <div class="flex justify-between text-sm">
+                    <p class=" pr-5">English <i class="fa-solid fa-angle-down"></i></p>
+                    <p class="border-l pl-5 border-gray-400">USD <i class="fa-solid fa-angle-down"></i></p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="flex items-center justify-between border-b border-gray-300 py-2">
+                <img class="w-40" src="/image/Logo.png" alt="">
+                <div>
+                    <ul class="flex gap-12">
+                        <li><a class="hover:text-[#00B207] transition-all duration-300" href="">Home</a></li>
+                        <li><a class="hover:text-[#00B207] transition-all duration-300" href="">Products</a></li>
+                        <li><a class="hover:text-[#00B207] transition-all duration-300" href="">Blog</a></li>
+                        <li><a class="hover:text-[#00B207] transition-all duration-300" href="">About</a></li>
+                        <li><a class="hover:text-[#00B207] transition-all duration-300" href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="flex items-center gap-4 ">
+                    <i class="fa-solid fa-user hover:text-[#00B207] transition-all duration-300"></i>
+                   <i class="fa-solid fa-cart-arrow-down hover:text-[#00B207] transition-all duration-300"></i>
+                    <i class="fa-solid fa-heart hover:text-[#00B207] transition-all duration-300"></i>
                 </div>
             </div>
         </div>
